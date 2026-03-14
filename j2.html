@@ -1,0 +1,41 @@
+<!html>
+    <head>
+        <script>
+            const a={
+                   'name':'Mary',
+         'age':21
+    ,
+    'branch':{"b1":"CST",'b2':"cs&it"},
+    "Marks":[21,22,25],
+    "ispresent":true,
+    "city":null
+            }
+            console.log(a.name);
+            console.log(a['age']);      // console.log(a.age);  same
+            console.log(a.branch.b1);  //CST ANSWER
+            console.log(a.branch.b2);
+            console.log(a['branch']['b1'])  // SAME AS UPPER ONE CST ANSWER
+            console.log(a.Marks[2]);
+            console.log(a.ispresent);
+            console.log(a.city);
+
+              var b={
+         'name':'Rahul',
+         'age':22,
+    "skills":["HTMl","CSS","JS"],
+    "address":{
+         state:"Karachi",
+         country:"Pakistan"
+    }
+     }
+     console.log(b.name);
+     console.log(b.age);
+     console.log(b.skills[0])
+     console.log(b.skills[2])
+     console.log(b.address['state'])
+     console.log(b['address']['country'])
+
+     
+        </script>
+    </head>
+</html>

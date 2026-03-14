@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+      const data = {
+  students: [
+    { id: 1, name: "Aarav", grade: "A" },
+    { id: 2, name: "Riya", grade: "B" },
+    { id: 3, name: "Karan", grade: "A+" }
+  ]
+};
+
+const topStudents = data.students.filter(s => s.grade === "A+");
+console.log(topStudents);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
