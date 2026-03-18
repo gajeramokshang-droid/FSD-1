@@ -1,0 +1,3 @@
+Start logError
+Warning
+Error
