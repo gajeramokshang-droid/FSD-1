@@ -1,0 +1,16 @@
+// Consider following student 
+// collection:[ {_id:123433,name: "SSS",age:22}, {_id:123434,name: "YYY",age:2}, {_id:123435,name: "PPP",age:32},]Do as directed:
+// (1) Update name=”JJJ” and age=40, where age=20 occurs. Insert new document, if record is not found.
+// (2) To retrieve age and name fields of documents having names “YYY” & “SSS”. Don’t project _id field.
+
+db.student.updateOne({age:20},{$set:{name:"JJJ",age:40}},{upsert:true})
+
+// upsert:true → inserts a new document if no match is found
+
+
+db.student.find(
+  { name: { $in: ["YYY", "SSS"] } }, 
+  { _id: 0, name: 1, age: 1 }
+)
+
+// $in → matches multiple values (YYY or SSS)
